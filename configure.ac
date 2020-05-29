@@ -46,18 +46,18 @@ AC_PROG_PKGCONFIG
 
 ## use pkg-config for hiredis
 ##
-if test x"${PKGCONFIG}" == x"yes"; then
+##if test x"${PKGCONFIG}" == x"yes"; then
     ## check via pkg-config for hiredis
-    if pkg-config --exists hiredis; then
+   ## if pkg-config --exists hiredis; then
         ## obtain cflags and obtain libs
-        hiredis_cxxflags=`pkg-config  --cflags hiredis`
-        hiredis_libs=`pkg-config --libs hiredis`
+ ##       hiredis_cxxflags=`pkg-config  --cflags hiredis`
+  ##      hiredis_libs=`pkg-config --libs hiredis`
         ## no need to build libhiredis.a
-        hiredis_tgt=""     
-    else
-        AC_MSG_WARN([pkg-config exists but hiredis is not available.])
-    fi
-fi
+##        hiredis_tgt=""     
+##    else
+ ##       AC_MSG_WARN([pkg-config exists but hiredis is not available.])
+ ##   fi
+##fi
 
 ## And make sure these flags are used for the tests below.
 CPPFLAGS="${hiredis_cxxflags} ${CPPFLAGS}"
