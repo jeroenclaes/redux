@@ -11,7 +11,7 @@ PKG_DEB_NAME="libhiredis-dev"
 PKG_RPM_NAME="hiredis-devel"
 PKG_BREW_NAME="hiredis"
 PKG_TEST_HEADER="<hiredis/hiredis.h>"
-PKG_CFLAGS="-I/usr/include/hiredis"
+PKG_CFLAGS="-Isrc/hiredis"
 PKG_LIBS="-lhiredis"
 
 # Use pkg-config if available
