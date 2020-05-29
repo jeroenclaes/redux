@@ -1,6 +1,6 @@
 #include <R.h>
 #include <Rinternals.h>
-#include <hiredis.h>
+#include <hiredis/hiredis.h>
 #include <stdbool.h>
 
 /* whole reply */
