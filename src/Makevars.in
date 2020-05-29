@@ -1,6 +1,6 @@
 # -*- makefile -*-
-PKG_CFLAGS=@cflags@
-PKG_LIBS=@libs@
+#PKG_CFLAGS=@cflags@
+#PKG_LIBS=@libs@
 libhiredis.a:
 		$(MAKE) CC="$(CC)" CFLAGS="$(CFLAGS) $(CPICFLAGS)" AR="$(AR)" RANLIB="$(RANLIB)" \
 			--directory=hiredis libhiredis.a
