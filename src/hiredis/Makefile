@@ -23,4 +23,3 @@ dict.o: dict.c fmacros.h dict.h
 
 $(STLIBNAME): $(OBJ)
 	$(STLIB_MAKE_CMD) $(OBJ)
-
