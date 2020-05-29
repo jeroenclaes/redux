@@ -50,7 +50,7 @@ if test x"${PKGCONFIG}" == x"yes"; then
     ## check via pkg-config for hiredis
     if pkg-config --exists hiredis; then
         ## obtain cflags and obtain libs
-        hiredis_cxxflags=`pkg-config --cflags hiredis`
+        hiredis_cxxflags=`pkg-config  --cflags hiredis`
         hiredis_libs=`pkg-config --libs hiredis`
         ## no need to build libhiredis.a
         hiredis_tgt=""     
